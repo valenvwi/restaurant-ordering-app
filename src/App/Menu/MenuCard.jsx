@@ -3,19 +3,23 @@ import { Link } from "react-router-dom";
 
 export default function MenuCard(props) {
   const setMenuId = useMenuStore((state) => state.setMenuId);
+  const setCategory = useMenuStore((state) => state.setCategory);
 
   return (
     <>
-      <h2 className="mt-5">{props.category}</h2>
+      <h2 className="mt-5">{props.title}</h2>
       {props.menu?.map((menuItem) => (
         <div className="col-md-4 col-lg-3 " key={menuItem.id}>
           <div className="card my-3">
             <Link
-              to={`/menuItem/${menuItem.id}`}
-              onClick={() => setMenuId(menuItem.id)}
+              to="/menuItem"
+              onClick={() => {
+                setMenuId(menuItem.id);
+                setCategory(props.category);
+              }}
             >
               <img
-                src={menuItem.url}
+                src={menuItem.image}
                 alt={menuItem.name}
                 height="250"
                 className="card-img-top"

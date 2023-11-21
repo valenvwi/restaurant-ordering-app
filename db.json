@@ -1,132 +1,130 @@
 {
-  "menu": {
-    "appetizers": [
-      {
-        "id": 1,
-        "name": "Edamame",
-        "description": "Steamed soybeans with sea salt",
-        "price": 5,
-        "url": "./src/assets/Edamame.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Gyoza",
-        "description": "Japanese dumplings with pork and vegetables",
-        "price": 8,
-        "url": "./src/assets/Gyoza.jpg"
-      },
-      {
-        "id": 3,
-        "name": "Agedashi Tofu",
-        "description": "Deep-fried tofu cubes in savory dashi broth",
-        "price": 7,
-        "url": "./src/assets/Agedashi-tofu.jpg"
-      },
-      {
-        "id": 4,
-        "name": "Tempura Shrimp",
-        "description": "Crispy fried shrimp in tempura batter",
-        "price": 10,
-        "url": "./src/assets/Tempura.jpg"
-      },
-      {
-        "id": 5,
-        "name": "Yakitori",
-        "description": "Grilled chicken skewers with teriyaki glaze",
-        "price": 9,
-        "url": "./src/assets/Yakitori.jpg"
-      }
-    ],
-    "mains": [
-      {
-        "id": 6,
-        "name": "Sushi Platter",
-        "description": "Assorted sushi rolls with fresh fish and rice",
-        "price": 18,
-        "url": "./src/assets/Sushi.jpg"
-      },
-      {
-        "id": 7,
-        "name": "Chicken Ramen",
-        "description": "Japanese noodle soup with broth, chicken, and vegetables",
-        "price": 12,
-        "url": "./src/assets/Ramen.jpg"
-      },
-      {
-        "id": 8,
-        "name": "Teriyaki Chicken Donburi",
-        "description": "Grilled chicken with teriyaki sauce over rice",
-        "price": 15,
-        "url": "./src/assets/Teriyaki.jpg"
-      },
-      {
-        "id": 9,
-        "name": "Chirashi Bowl",
-        "description": "Assorted sashimi over a bed of sushi rice",
-        "price": 20,
-        "url": "./src/assets/Chirashi.jpg"
-      },
-      {
-        "id": 10,
-        "name": "Okonomiyaki",
-        "description": "Japanese savory pancake with various ingredients",
-        "price": 14,
-        "url": "./src/assets/Okonomiyaki.jpg"
-      }
-    ],
-    "desserts": [
-      {
-        "id": 11,
-        "name": "Matcha Cheesecake",
-        "category": "Desserts",
-        "description": "Cheesecake flavored with Japanese matcha green tea",
-        "price": 10,
-        "url": "./src/assets/Matcha-Cheesecake.jpg"
-      },
-      {
-        "id": 12,
-        "name": "Mochi Ice Cream",
-        "description": "Rice cake filled with ice cream in various flavors",
-        "price": 8,
-        "url": "./src/assets/Mochi.jpg"
-      },
-      {
-        "id": 13,
-        "name": "Dorayaki",
-        "description": "Sweet pancake sandwiches with red bean paste",
-        "price": 6,
-        "url": "./src/assets/Dorayaki.jpg"
-      },
-      {
-        "id": 14,
-        "name": "Green Tea Tiramisu",
-        "description": "Japanese twist on classic tiramisu with green tea flavor",
-        "price": 9,
-        "url": "./src/assets/GreenTea-Tiramisu.jpg"
-      }
-    ],
-    "drinks": [
-      {
-        "id": 15,
-        "name": "Green Tea",
-        "description": "Traditional Japanese green tea",
-        "price": 3,
-        "url": "./src/assets/GreenTea.jpg"
-      },
-      {
-        "id": 16,
-        "name": "Iced Matcha Latte",
-        "description": "Refreshing iced matcha latte",
-        "price": 5,
-        "url": "./src/assets/Matcha-Latte.jpg"
-      },
-      {
-        "id": 17,
-        "name": "Japanese Plum Soda",
-        "description": "Fizzing soda with the flavor of Japanese plum",
-        "price": 4,
-        "url": "./src/assets/Plum-Soda.jpg"
-      }
-    ]
-  }
+  "appetizers": [
+    {
+      "id": 1,
+      "name": "Edamame",
+      "description": "Steamed soybeans with sea salt",
+      "price": 5,
+      "image": "./src/assets/Edamame.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Gyoza",
+      "description": "Japanese dumplings with pork and vegetables",
+      "price": 8,
+      "image": "./src/assets/Gyoza.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Agedashi Tofu",
+      "description": "Deep-fried tofu cubes in savory dashi broth",
+      "price": 7,
+      "image": "./src/assets/Agedashi-tofu.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Tempura Shrimp",
+      "description": "Crispy fried shrimp in tempura batter",
+      "price": 10,
+      "image": "./src/assets/Tempura.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Yakitori",
+      "description": "Grilled chicken skewers with teriyaki glaze",
+      "price": 9,
+      "image": "./src/assets/Yakitori.jpg"
+    }
+  ],
+  "mains": [
+    {
+      "id": 6,
+      "name": "Sushi Platter",
+      "description": "Assorted sushi rolls with fresh fish and rice",
+      "price": 18,
+      "image": "./src/assets/Sushi.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Chicken Ramen",
+      "description": "Japanese noodle soup with broth, chicken, and vegetables",
+      "price": 12,
+      "image": "./src/assets/Ramen.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Teriyaki Chicken Donburi",
+      "description": "Grilled chicken with teriyaki sauce over rice",
+      "price": 15,
+      "image": "./src/assets/Teriyaki.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Chirashi Bowl",
+      "description": "Assorted sashimi over a bed of sushi rice",
+      "price": 20,
+      "image": "./src/assets/Chirashi.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Okonomiyaki",
+      "description": "Japanese savory pancake with various ingredients",
+      "price": 14,
+      "image": "./src/assets/Okonomiyaki.jpg"
+    }
+  ],
+  "desserts": [
+    {
+      "id": 11,
+      "name": "Matcha Cheesecake",
+      "category": "Desserts",
+      "description": "Cheesecake flavored with Japanese matcha green tea",
+      "price": 10,
+      "image": "./src/assets/Matcha-Cheesecake.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Mochi Ice Cream",
+      "description": "Rice cake filled with ice cream in various flavors",
+      "price": 8,
+      "image": "./src/assets/Mochi.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Dorayaki",
+      "description": "Sweet pancake sandwiches with red bean paste",
+      "price": 6,
+      "image": "./src/assets/Dorayaki.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Green Tea Tiramisu",
+      "description": "Japanese twist on classic tiramisu with green tea flavor",
+      "price": 9,
+      "image": "./src/assets/GreenTea-Tiramisu.jpg"
+    }
+  ],
+  "drinks": [
+    {
+      "id": 15,
+      "name": "Green Tea",
+      "description": "Traditional Japanese green tea",
+      "price": 3,
+      "image": "./src/assets/GreenTea.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Iced Matcha Latte",
+      "description": "Refreshing iced matcha latte",
+      "price": 5,
+      "image": "./src/assets/Matcha-Latte.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Japanese Plum Soda",
+      "description": "Fizzing soda with the flavor of Japanese plum",
+      "price": 4,
+      "image": "./src/assets/Plum-Soda.jpg"
+    }
+  ]
 }
