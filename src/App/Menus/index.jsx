@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Menus() {
   const [menus, setMenus] = useState([]);
@@ -19,7 +20,9 @@ export default function Menus() {
       {menus.map((menu) => (
         <div key={menu.id}>
           <h5>{menu.name}</h5>
-          <img src={menu.url} alt={menu.name} width="200" height="200" />
+          <Link to={`/menuItem/${menu.id}`}>
+            <img src={menu.url} alt={menu.name} width="200" height="200" />
+          </Link>
           <p>Price: {menu.price} CHF</p>
         </div>
       ))}
