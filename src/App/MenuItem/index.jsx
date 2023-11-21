@@ -4,12 +4,14 @@ import { useMenuStore } from "../stores/menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareMinus, faSquarePlus } from "@fortawesome/free-solid-svg-icons";
 import "../index.css";
+import { useCartStore } from "../stores/cart";
 
 export default function MenuItem() {
   const menuId = useMenuStore((state) => state.menuId);
   const category = useMenuStore((state) => state.category);
   const [menuItem, setMenuItem] = useState({});
   const [quantity, setQuantity] = useState(1);
+  const addToCart = useCartStore((state) => state.addToCart);
 
   const getMenuItem = async () => {
     const response = await axios.get(
@@ -60,7 +62,13 @@ export default function MenuItem() {
               <FontAwesomeIcon icon={faSquarePlus} size="xl" />
             </button>
           </div>
-          <button className="btn btn-primary btn-lg">Add to cart</button>
+          <button className="btn btn-primary btn-lg" onClick={() => addToCart(
+                    menuItem.id,
+                    menuItem.name,
+                    menuItem.image,
+                    menuItem.price,
+                    quantity
+                  )}>Add to cart</button>
         </div>
       </div>
     </div>

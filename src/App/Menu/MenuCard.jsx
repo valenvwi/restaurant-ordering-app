@@ -1,9 +1,13 @@
 import { useMenuStore } from "../stores/menu";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquarePlus } from "@fortawesome/free-solid-svg-icons";
+import { useCartStore } from "../stores/cart";
 
 export default function MenuCard(props) {
   const setMenuId = useMenuStore((state) => state.setMenuId);
   const setCategory = useMenuStore((state) => state.setCategory);
+  const addToCart = useCartStore((state) => state.addToCart);
 
   return (
     <>
@@ -24,9 +28,25 @@ export default function MenuCard(props) {
                 className="card-img-top square-img"
               />
             </Link>
-            <div className="card-body">
-              <h5>{menuItem.name}</h5>
-              <p>Price: {menuItem.price} CHF</p>
+            <div className="card-body d-flex justify-content-between">
+              <div>
+                <h5>{menuItem.name}</h5>
+                <p>Price: {menuItem.price} CHF</p>
+              </div>
+              <div>
+                <button
+                  className="btn icon"
+                  onClick={() => addToCart(
+                    menuItem.id,
+                    menuItem.name,
+                    menuItem.image,
+                    menuItem.price,
+                    1
+                  )}
+                >
+                  <FontAwesomeIcon icon={faSquarePlus} size="xl" />
+                </button>
+              </div>
             </div>
           </div>
         </div>

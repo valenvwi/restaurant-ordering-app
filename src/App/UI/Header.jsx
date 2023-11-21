@@ -8,10 +8,12 @@ export default function Header() {
       <Link to="/" className="text-decoration-none text-white">
         <h4>ABC Restaurant</h4>
       </Link>
-      <FontAwesomeIcon
-        icon={faCartShopping}
-        style={{ color: "#ffffff", fontSize: "20px" }}
-      />
+      <Link to="/cart" className="text-decoration-none text-white">
+        <FontAwesomeIcon
+          icon={faCartShopping}
+          style={{ color: "#ffffff", fontSize: "20px" }}
+        />
+      </Link>
     </div>
   );
 }
