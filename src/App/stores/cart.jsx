@@ -22,6 +22,28 @@ export const useCartStore = create((set) => ({
             },
           ],
     })),
+
+  increaseQuantity: (id) =>
+    set((state) => ({
+      cartItems: state.cartItems.find((cartItem) => cartItem.id === id)
+        ? state.cartItems.map((cartItem) =>
+            cartItem.id === id
+              ? { ...cartItem, quantity: cartItem.quantity + 1 }
+              : cartItem
+          )
+        : [...state.cartItems],
+    })),
+
+  decreaseQuantity: (id) =>
+    set((state) => ({
+      cartItems: state.cartItems.find((cartItem) => cartItem.id === id)
+        ? state.cartItems.map((cartItem) =>
+            cartItem.id === id
+              ? { ...cartItem, quantity: cartItem.quantity - 1 }
+              : cartItem
+          )
+        : [...state.cartItems],
+    })),
 }));
 
 export const getTotalPrice = (cartItems) => {
