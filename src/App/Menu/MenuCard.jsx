@@ -21,8 +21,7 @@ export default function MenuCard(props) {
               <img
                 src={menuItem.image}
                 alt={menuItem.name}
-                height="250"
-                className="card-img-top"
+                className="card-img-top square-img"
               />
             </Link>
             <div className="card-body">
