@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useMenuStore } from "../stores/menu";
 
 export default function MenuItem() {
-  const menuId = window.location.pathname.split("/")[2];
+  const menuId = useMenuStore((state) => state.menuId);
   const [menuItem, setMenuItem] = useState({});
 
   const getMenuItem = async () => {
-    const response = await axios.get(`http://localhost:3030/menus/${menuId}`);
-    console.log(response.data);
+    const response = await axios.get(`http://localhost:3030/menu/${menuId}`);
     setMenuItem(response.data);
   };
 
