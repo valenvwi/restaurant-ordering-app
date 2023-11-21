@@ -1,140 +1,132 @@
 {
-  "menu": [
-    {
-      "id": 1,
-      "name": "Edamame",
-      "category": "Appetizers",
-      "description": "Steamed soybeans with sea salt",
-      "price": 5,
-      "url": "https://www.acouplecooks.com/wp-content/uploads/2020/03/Edamame-Recipe-004.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Gyoza",
-      "category": "Appetizers",
-      "description": "Japanese dumplings with pork and vegetables",
-      "price": 8,
-      "url": "https://cardamommagazine.com/wp-content/uploads/2021/04/chicken-gyoza-585x390.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Agedashi Tofu",
-      "category": "Appetizers",
-      "description": "Deep-fried tofu cubes in savory dashi broth",
-      "price": 7,
-      "url": "https://pickledplum.com/wp-content/uploads/2018/01/agedashi-tofu-520.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Tempura Shrimp",
-      "category": "Appetizers",
-      "description": "Crispy fried shrimp in tempura batter",
-      "price": 10,
-      "url": "https://mysushikitchen.com/wp-content/uploads/2021/10/Tempura-Batter-on-Shrimp-1024x683.jpeg"
-    },
-    {
-      "id": 5,
-      "name": "Yakitori",
-      "category": "Appetizers",
-      "description": "Grilled chicken skewers with teriyaki glaze",
-      "price": 9,
-      "url": "https://d21klxpge3tttg.cloudfront.net/wp-content/uploads/2012/01/spark-grill-yakitori_05.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Sushi Platter",
-      "category": "Main Dishes",
-      "description": "Assorted sushi rolls with fresh fish and rice",
-      "price": 18,
-      "url": "https://popmenucloud.com/cdn-cgi/image/width%3D1440%2Cheight%3D1440%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/kdfpaeib/913740c5-f21d-430f-8b20-af89803f88c1.jpg"
-    },
-    {
-      "id": 7,
-      "name": "Chicken Ramen",
-      "category": "Main Dishes",
-      "description": "Japanese noodle soup with broth, chicken, and vegetables",
-      "price": 12,
-      "url": "https://www.theflavorbender.com/wp-content/uploads/2019/01/Easy-Chicken-Ramen-The-Flavor-Bender-6066.jpg"
-    },
-    {
-      "id": 8,
-      "name": "Teriyaki Chicken Donburi",
-      "category": "Main Dishes",
-      "description": "Grilled chicken with teriyaki sauce over rice",
-      "price": 15,
-      "url": "https://platesbynat.com/wp-content/uploads/2023/10/teriyaki-chicken-donburi-largefront.jpg"
-    },
-    {
-      "id": 9,
-      "name": "Chirashi Bowl",
-      "category": "Main Dishes",
-      "description": "Assorted sashimi over a bed of sushi rice",
-      "price": 20,
-      "url": "https://hips.hearstapps.com/hmg-prod/images/chirashi-bowl-1-1656100228.jpg?crop=0.711xw:0.849xh;0,0.0561xh&resize=1200:*"
-    },
-    {
-      "id": 10,
-      "name": "Okonomiyaki",
-      "category": "Main Dishes",
-      "description": "Japanese savory pancake with various ingredients",
-      "price": 14,
-      "url": "https://www.spoonforkbacon.com/wp-content/uploads/2021/09/okonomiyaki-688x916.jpg"
-    },
-    {
-      "id": 11,
-      "name": "Matcha Cheesecake",
-      "category": "Desserts",
-      "description": "Cheesecake flavored with Japanese matcha green tea",
-      "price": 10,
-      "url": "https://w4s8p5t8.rocketcdn.me/wp-content/uploads/2022/11/easy-vegan-matcha-cheesecake.jpg.webp"
-    },
-    {
-      "id": 12,
-      "name": "Mochi Ice Cream",
-      "category": "Desserts",
-      "description": "Rice cake filled with ice cream in various flavors",
-      "price": 8,
-      "url": "https://www.justonecookbook.com/wp-content/uploads/2020/08/Mochi-Ice-Cream-8674-II.jpg"
-    },
-    {
-      "id": 13,
-      "name": "Dorayaki",
-      "category": "Desserts",
-      "description": "Sweet pancake sandwiches with red bean paste",
-      "price": 6,
-      "url": "https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/07/dorayaki-1200x675.jpg"
-    },
-    {
-      "id": 14,
-      "name": "Green Tea Tiramisu",
-      "category": "Desserts",
-      "description": "Japanese twist on classic tiramisu with green tea flavor",
-      "price": 9,
-      "url": "https://takestwoeggs.com/wp-content/uploads/2021/03/takes-two-eggs_matcha-tiramisu-5-720x900.jpg"
-    },
-    {
-      "id": 15,
-      "name": "Green Tea",
-      "category": "Drinks",
-      "description": "Traditional Japanese green tea",
-      "price": 3,
-      "url": "https://assets.epicurious.com/photos/5887d21b5f76684c78cf57db/16:9/w_1280,c_limit/green_tea_24012017.jpg"
-    },
-    {
-      "id": 16,
-      "name": "Iced Matcha Latte",
-      "category": "Drinks",
-      "description": "Refreshing iced matcha latte",
-      "price": 5,
-      "url": "https://thehealthfulideas.com/wp-content/uploads/2022/02/Iced-Chai-Matcha-Latte-12.jpg"
-    },
-    {
-      "id": 17,
-      "name": "Japanese Plum Soda",
-      "category": "Drinks",
-      "description": "Fizzing soda with the flavor of Japanese plum",
-      "price": 4,
-      "url": "https://greenheartlove.com/wp-content/uploads/2022/07/classic-vietnamese-plum-soda-1-1024x895.jpg"
-    }
-  ]
+  "menu": {
+    "appetizers": [
+      {
+        "id": 1,
+        "name": "Edamame",
+        "description": "Steamed soybeans with sea salt",
+        "price": 5,
+        "url": "./src/assets/Edamame.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Gyoza",
+        "description": "Japanese dumplings with pork and vegetables",
+        "price": 8,
+        "url": "./src/assets/Gyoza.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Agedashi Tofu",
+        "description": "Deep-fried tofu cubes in savory dashi broth",
+        "price": 7,
+        "url": "./src/assets/Agedashi-tofu.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Tempura Shrimp",
+        "description": "Crispy fried shrimp in tempura batter",
+        "price": 10,
+        "url": "./src/assets/Tempura.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Yakitori",
+        "description": "Grilled chicken skewers with teriyaki glaze",
+        "price": 9,
+        "url": "./src/assets/Yakitori.jpg"
+      }
+    ],
+    "mains": [
+      {
+        "id": 6,
+        "name": "Sushi Platter",
+        "description": "Assorted sushi rolls with fresh fish and rice",
+        "price": 18,
+        "url": "./src/assets/Sushi.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Chicken Ramen",
+        "description": "Japanese noodle soup with broth, chicken, and vegetables",
+        "price": 12,
+        "url": "./src/assets/Ramen.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Teriyaki Chicken Donburi",
+        "description": "Grilled chicken with teriyaki sauce over rice",
+        "price": 15,
+        "url": "./src/assets/Teriyaki.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Chirashi Bowl",
+        "description": "Assorted sashimi over a bed of sushi rice",
+        "price": 20,
+        "url": "./src/assets/Chirashi.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Okonomiyaki",
+        "description": "Japanese savory pancake with various ingredients",
+        "price": 14,
+        "url": "./src/assets/Okonomiyaki.jpg"
+      }
+    ],
+    "desserts": [
+      {
+        "id": 11,
+        "name": "Matcha Cheesecake",
+        "category": "Desserts",
+        "description": "Cheesecake flavored with Japanese matcha green tea",
+        "price": 10,
+        "url": "./src/assets/Matcha-Cheesecake.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Mochi Ice Cream",
+        "description": "Rice cake filled with ice cream in various flavors",
+        "price": 8,
+        "url": "./src/assets/Mochi.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Dorayaki",
+        "description": "Sweet pancake sandwiches with red bean paste",
+        "price": 6,
+        "url": "./src/assets/Dorayaki.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Green Tea Tiramisu",
+        "description": "Japanese twist on classic tiramisu with green tea flavor",
+        "price": 9,
+        "url": "./src/assets/GreenTea-Tiramisu.jpg"
+      }
+    ],
+    "drinks": [
+      {
+        "id": 15,
+        "name": "Green Tea",
+        "description": "Traditional Japanese green tea",
+        "price": 3,
+        "url": "./src/assets/GreenTea.jpg"
+      },
+      {
+        "id": 16,
+        "name": "Iced Matcha Latte",
+        "description": "Refreshing iced matcha latte",
+        "price": 5,
+        "url": "./src/assets/Matcha-Latte.jpg"
+      },
+      {
+        "id": 17,
+        "name": "Japanese Plum Soda",
+        "description": "Fizzing soda with the flavor of Japanese plum",
+        "price": 4,
+        "url": "./src/assets/Plum-Soda.jpg"
+      }
+    ]
+  }
 }
