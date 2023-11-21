@@ -14,13 +14,12 @@ export default function Menus() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h1>Menus</h1>
       {menus.map((menu) => (
         <div key={menu.id}>
           <h5>{menu.name}</h5>
           <img src={menu.url} alt={menu.name} width="200" height="200" />
-          <p>{menu.description}</p>
           <p>Price: {menu.price} CHF</p>
         </div>
       ))}
