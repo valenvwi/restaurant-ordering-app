@@ -4,34 +4,53 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquarePlus } from "@fortawesome/free-solid-svg-icons";
 import { useCartStore } from "../stores/cart";
 
-export default function MenuCard(props) {
+export default function MenuCardMobile(props) {
   const setMenuId = useMenuStore((state) => state.setMenuId);
   const setCategory = useMenuStore((state) => state.setCategory);
   const addToCart = useCartStore((state) => state.addToCart);
 
   return (
     <>
-      <h2 className="mt-5">{props.title}</h2>
+      <h2 className="mt-5 mb-3 ms-2">{props.title}</h2>
       {props.menu?.map((menuItem) => (
-        <div className="col-md-4 col-lg-3 " key={menuItem.id}>
-          <div className="card my-3">
+        <div className="row card m-1" key={menuItem.id}>
+          <div className="d-flex flex-column-row my-3">
             <Link
               to="/menuItem"
               onClick={() => {
                 setMenuId(menuItem.id);
                 setCategory(props.category);
               }}
+              className="col-4 d-flex justify-content-center align-items-center"
             >
+              {/* Image on xs screens */}
               <img
                 src={menuItem.image}
                 alt={menuItem.name}
-                className="card-img-top square-img"
+                className="square-img d-block d-sm-none"
+                height="80px"
+              />
+
+              {/* Image on sm screens */}
+              <img
+                src={menuItem.image}
+                alt={menuItem.name}
+                className="square-img d-none d-sm-block"
+                height="120px"
               />
             </Link>
-            <div className="card-body d-flex justify-content-between">
-              <div>
-                <h5>{menuItem.name}</h5>
+
+            <div className="d-flex justify-content-between align-items-center col-8">
+              {/* Text on xs screens */}
+              <div className="ms-3 me-1 d-block d-sm-none">
+                <h6>{menuItem.name}</h6>
                 <p>Price: {menuItem.price} CHF</p>
+              </div>
+
+              {/* Text on sm screens */}
+              <div className="mx-3 d-none d-sm-block">
+                <h5>{menuItem.name}</h5>
+                <h6 className="fw-normal">Price: {menuItem.price} CHF</h6>
               </div>
               <div>
                 <button

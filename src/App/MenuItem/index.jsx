@@ -42,7 +42,7 @@ export default function MenuItem() {
             <img
               src={menuItem.image}
               alt={menuItem.name}
-              className="square-img"
+              className="square-img ratio-1x1"
             />
           </div>
         </div>
