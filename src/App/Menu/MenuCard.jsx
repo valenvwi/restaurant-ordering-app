@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquarePlus } from "@fortawesome/free-solid-svg-icons";
 import { useCartStore } from "../stores/cart";
+import { motion } from "framer-motion"
 
 export default function MenuCard(props) {
   const setMenuId = useMenuStore((state) => state.setMenuId);
@@ -34,8 +35,9 @@ export default function MenuCard(props) {
                 <p> Price: {menuItem.price} CHF</p>
               </div>
               <div>
-                <button
+                <motion.button
                   className="btn icon"
+                  whileHover={{ scale: 1.2 }}
                   onClick={() =>
                     addToCart(
                       menuItem.id,
@@ -47,7 +49,7 @@ export default function MenuCard(props) {
                   }
                 >
                   <FontAwesomeIcon icon={faSquarePlus} size="xl" />
-                </button>
+                </motion.button>
               </div>
             </div>
           </div>

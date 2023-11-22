@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareMinus, faSquarePlus } from "@fortawesome/free-solid-svg-icons";
 import "../index.css";
 import { useCartStore } from "../stores/cart";
+import { motion } from "framer-motion";
 
 export default function MenuItem() {
   const menuId = useMenuStore((state) => state.menuId);
@@ -51,24 +52,37 @@ export default function MenuItem() {
           <h4 className="p-3 text-center">{menuItem.description}</h4>
           <h5> Price: {menuItem.price} CHF</h5>
           <div className="d-flex align-text-center p-4">
-            <button
+            <motion.button
               className="btn icon icon-minus-margin"
+              whileHover={{ scale: 1.2 }}
               onClick={decreaseQuantity}
             >
               <FontAwesomeIcon icon={faSquareMinus} size="xl" />
-            </button>
+            </motion.button>
             <h5 className="my-1 mx-4">Qty: {quantity} </h5>
-            <button className="btn icon" onClick={increaseQuantity}>
+            <motion.button
+              className="btn icon"
+              whileHover={{ scale: 1.2 }}
+              onClick={increaseQuantity}
+            >
               <FontAwesomeIcon icon={faSquarePlus} size="xl" />
-            </button>
+            </motion.button>
           </div>
-          <button className="btn btn-primary btn-lg" onClick={() => addToCart(
-                    menuItem.id,
-                    menuItem.name,
-                    menuItem.image,
-                    menuItem.price,
-                    quantity
-                  )}>Add to cart</button>
+          <motion.button
+            className="btn btn-primary btn-lg"
+            whileHover={{ scale: 1.1 }}
+            onClick={() =>
+              addToCart(
+                menuItem.id,
+                menuItem.name,
+                menuItem.image,
+                menuItem.price,
+                quantity
+              )
+            }
+          >
+            Add to cart
+          </motion.button>
         </div>
       </div>
     </div>
