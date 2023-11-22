@@ -27,16 +27,8 @@ export default function MenuCardMobile(props) {
               <img
                 src={menuItem.image}
                 alt={menuItem.name}
-                className="square-img d-block d-sm-none"
-                height="80px"
-              />
-
-              {/* Image on sm screens */}
-              <img
-                src={menuItem.image}
-                alt={menuItem.name}
-                className="square-img d-none d-sm-block"
-                height="120px"
+                className="square-img"
+                width="100%"
               />
             </Link>
 
@@ -48,7 +40,7 @@ export default function MenuCardMobile(props) {
               </div>
 
               {/* Text on sm screens */}
-              <div className="mx-3 d-none d-sm-block">
+              <div className="mx-5 d-none d-sm-block">
                 <h5>{menuItem.name}</h5>
                 <h6 className="fw-normal">Price: {menuItem.price} CHF</h6>
               </div>

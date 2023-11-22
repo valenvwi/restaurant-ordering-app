@@ -11,20 +11,28 @@ export default function Cart() {
   const decreaseQuantity = useCartStore((state) => state.decreaseQuantity);
 
   return (
-    <div className="container mt-5 pt-5">
+    <div className="container mt-5 py-5">
       <h2 className="ms-2">Your Cart</h2>
       {cartItems.map((cartItem) => (
         <div className="card p-3 m-3" key={cartItem.id}>
           <div className="row">
             <div className="col-md-4 d-flex justify-content-center align-items-center">
+              {/* Image on medium and larger screens */}
+              <img
+                src={cartItem.image}
+                alt={cartItem.name}
+                width="80%"
+                className="mx-2 square-img d-none d-sm-none d-md-block"
+              />
+              {/* Image on small and smaller screens */}
               <img
                 src={cartItem.image}
                 alt={cartItem.name}
                 width="95%"
-                className="mx-2 square-img"
+                className="mx-2 square-img d-sm-block d-md-none"
               />
             </div>
-            <div className="col-md-8 p-3 text-center ">
+            <div className="col-md-8 p-3 text-center d-flex flex-column justify-content-center align-items-center">
               {/* Text on medium and larger screens */}
               <div className="mx-2 d-none d-sm-none d-md-block pb-2">
                 <h1 className="m-3">{cartItem.name}</h1>
@@ -42,7 +50,12 @@ export default function Cart() {
                 >
                   <FontAwesomeIcon icon={faSquareMinus} size="xl" />
                 </button>
-                <h5 className="p-2">Quantity: {cartItem.quantity}</h5>
+                <h5 className="p-2 d-none d-sm-none d-md-block">
+                  Quantity: {cartItem.quantity}
+                </h5>
+                <h6 className="p-2 d-sm-block d-md-none">
+                  Quantity: {cartItem.quantity}
+                </h6>
                 <button
                   className="btn icon"
                   onClick={() => increaseQuantity(cartItem.id)}
@@ -54,7 +67,7 @@ export default function Cart() {
           </div>
         </div>
       ))}
-      <h3 className="text-end m-3">Total Price: {totalPrice} CHF</h3>
+      <h3 className="text-end m-4">Total Price: {totalPrice} CHF</h3>
     </div>
   );
 }

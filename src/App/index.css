@@ -1,6 +1,7 @@
 .square-img {
   aspect-ratio: 1 / 1;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .two-line-ellipsis {
