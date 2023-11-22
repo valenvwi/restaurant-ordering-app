@@ -11,7 +11,7 @@ export default function Cart() {
   const decreaseQuantity = useCartStore((state) => state.decreaseQuantity);
 
   return (
-    <div className="container">
+    <div className="container mt-5 pt-5">
       <h1>Your Cart</h1>
       {cartItems.map((cartItem) => (
         <div className="card p-3 m-3" key={cartItem.id}>

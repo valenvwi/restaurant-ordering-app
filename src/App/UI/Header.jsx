@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="bg-dark text-white px-4 py-3 d-flex justify-content-between align-items-center">
+    <div className="fixed-top bg-dark text-white px-4 py-3 d-flex justify-content-between align-items-center">
       <Link to="/" className="text-decoration-none text-white">
         <h4>ABC Restaurant</h4>
       </Link>

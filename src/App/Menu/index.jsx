@@ -2,50 +2,37 @@ import MenuCard from "./MenuCard";
 import MenuCardMobile from "./MenuCardMobile";
 
 export default function Menu(props) {
+  const menu = [props.appetizers, props.mains, props.desserts, props.drinks];
+  const title = ["Appetizers", "Main Courses", "Desserts", "Beverages"];
+  const category = ["appetizers", "mains", "desserts", "drinks"];
+
   return (
     <>
-      <div className="container ">
+      <div className="container mt-5">
+        {/* Md and up screen */}
         <div className="d-none d-md-block">
           <div className="row">
-            <MenuCard
-              menu={props.appetizers}
-              title="Appetizers"
-              category="appetizers"
-            />
-            <MenuCard
-              menu={props.mains}
-              title="Main Courses"
-              category="mains"
-            />
-            <MenuCard
-              menu={props.desserts}
-              title="Desserts"
-              category="desserts"
-            />
-            <MenuCard menu={props.drinks} title="Beverages" category="drinks" />
+            {menu.map((menu, index) => (
+              <MenuCard
+                menu={menu}
+                title={title[index]}
+                category={category[index]}
+                key={index}
+              />
+            ))}
           </div>
         </div>
+
+        {/* Sm and down screen */}
         <div className="d-block d-md-none">
-          <MenuCardMobile
-            menu={props.appetizers}
-            title="Appetizers"
-            category="appetizers"
-          />
-          <MenuCardMobile
-            menu={props.mains}
-            title="Main Courses"
-            category="mains"
-          />
-          <MenuCardMobile
-            menu={props.desserts}
-            title="Desserts"
-            category="desserts"
-          />
-          <MenuCardMobile
-            menu={props.drinks}
-            title="Beverages"
-            category="drinks"
-          />
+          {menu.map((menu, index) => (
+            <MenuCardMobile
+              menu={menu}
+              title={title[index]}
+              category={category[index]}
+              key={index}
+            />
+          ))}
         </div>
       </div>
     </>

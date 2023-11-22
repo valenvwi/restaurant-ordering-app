@@ -30,8 +30,8 @@ export default function MenuCard(props) {
             </Link>
             <div className="card-body d-flex justify-content-between">
               <div>
-                <h5>{menuItem.name}</h5>
-                <p>Price: {menuItem.price} CHF</p>
+                <h5 className="two-line-ellipsis">{menuItem.name}</h5>
+                <p> Price: {menuItem.price} CHF</p>
               </div>
               <div>
                 <button

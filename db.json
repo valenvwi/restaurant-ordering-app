@@ -53,7 +53,7 @@
     },
     {
       "id": 8,
-      "name": "Teriyaki Chicken Donburi",
+      "name": "Teriyaki Chicken Don",
       "description": "Grilled chicken with teriyaki sauce over rice",
       "price": 15,
       "image": "./src/assets/Teriyaki.jpg"

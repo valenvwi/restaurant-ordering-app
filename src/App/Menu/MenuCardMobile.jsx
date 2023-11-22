@@ -11,7 +11,7 @@ export default function MenuCardMobile(props) {
 
   return (
     <>
-      <h2 className="mt-5 mb-3 ms-2">{props.title}</h2>
+      <h2 className="pt-5 mb-3 ms-2">{props.title}</h2>
       {props.menu?.map((menuItem) => (
         <div className="row card m-1" key={menuItem.id}>
           <div className="d-flex flex-column-row my-3">

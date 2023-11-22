@@ -35,7 +35,7 @@ export default function MenuItem() {
   };
 
   return (
-    <div className="container my-5">
+    <div className="container my-5 pt-5">
       <div className="row">
         <div className="col-xs-12 col-md-6" key={menuItem.id}>
           <div className="card my-3">
