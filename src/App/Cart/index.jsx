@@ -12,6 +12,7 @@ export default function Cart() {
   const totalPrice = getTotalPrice(cartItems);
   const increaseQuantity = useCartStore((state) => state.increaseQuantity);
   const decreaseQuantity = useCartStore((state) => state.decreaseQuantity);
+  const deleteFromCart = useCartStore((state) => state.deleteFromCart);
   const navigate = useNavigate();
 
   function backToMenu() {
